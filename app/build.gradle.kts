@@ -34,7 +34,7 @@ plugins {
     id(BuildPlugins.NAVIGATION_SAFE_ARGS)
     id(BuildPlugins.JACOCO)
     id(BuildPlugins.GRAPH_GENERATOR)
-    id(BuildPlugins.FABRIC)
+//    id(BuildPlugins.FABRIC)
 }
 
 allOpen {
@@ -60,10 +60,10 @@ android {
 
     signingConfigs {
         create(BuildType.RELEASE) {
-            keyAlias = getLocalProperty("signing.key.alias")
-            keyPassword = getLocalProperty("signing.key.password")
-            storeFile = file(getLocalProperty("signing.store.file"))
-            storePassword = getLocalProperty("signing.store.password")
+//            keyAlias = getLocalProperty("signing.key.alias")
+//            keyPassword = getLocalProperty("signing.key.password")
+//            storeFile = file(getLocalProperty("signing.store.file"))
+//            storePassword = getLocalProperty("signing.store.password")
         }
     }
 
